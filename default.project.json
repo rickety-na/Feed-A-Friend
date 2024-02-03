@@ -1,0 +1,39 @@
+{
+    "name": "feed-a-friend",
+    "tree": {
+        "$className": "DataModel",
+
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Rojo": {
+                "$path": "src/ReplicatedStorage",
+                "Packages": {
+                    "$path": "Packages"
+                }
+            }
+        },
+
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Rojo": {
+                "$path": "src/ServerScriptService"
+            }
+        },
+        "ServerStorage": {
+            "$className": "ServerStorage",
+            "Rojo": {
+                "$path": "src/ServerStorage"
+            }
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "Rojo": {
+                    "$path": "src/StarterPlayerScripts"
+                }
+            }
+            
+        }
+    }
+}
