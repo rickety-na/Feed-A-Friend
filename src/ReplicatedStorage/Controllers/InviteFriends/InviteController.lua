@@ -5,8 +5,6 @@ local Players = game:GetService("Players")
 
 local Packages = ReplicatedStorage.Rojo.Packages
 local Knit = require(Packages.Knit)
-local Trove = require(Knit.Util.Trove)
-local Signal = require(Knit.Util.Signal)
 
 local InviteController = Knit.CreateController { 
     Name = "InviteController",
