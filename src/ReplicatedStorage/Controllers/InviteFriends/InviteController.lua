@@ -1,9 +1,12 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local SocialService = game:GetService("SocialService")
 local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
 
 local Packages = ReplicatedStorage.Rojo.Packages
 local Knit = require(Packages.Knit)
+local Trove = require(Knit.Util.Trove)
+local Signal = require(Knit.Util.Signal)
 
 local InviteController = Knit.CreateController { 
     Name = "InviteController",
@@ -11,10 +14,8 @@ local InviteController = Knit.CreateController {
 }
 
 function InviteController:ShowFriends()
-    print("Helloworld")
     local button = Knit.Player:WaitForChild("PlayerGui"):WaitForChild("MainUI").MidLeft.Invite
     button.MouseButton1Click:Connect(function()
-
         local data = {
             senderUserID = Knit.Player.UserId
         }
@@ -43,15 +44,11 @@ function InviteController:ShowFriends()
 end
 
 function InviteController:KnitInit()
-    print("InviteController KnitInit called")
     self.Configurations = require(script.Parent.InviteConfiguration)
 end
 
 function InviteController:KnitStart()
-    print("InviteController KnitStart called")
     self:ShowFriends()
 end
-
-
 
 return InviteController

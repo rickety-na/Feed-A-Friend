@@ -9,12 +9,6 @@
                 "$path": "src/ReplicatedStorage",
                 "Packages": {
                     "$path": "Packages"
-                },
-                "Controllers": {
-                    "$path": "src/ReplicatedStorage/Controllers",
-                    "InviteFriends": {
-                        "$path": "src/ReplicatedStorage/Controllers/InviteFriends"
-                    }
                 }
             }
         },
@@ -28,11 +22,7 @@
         "ServerStorage": {
             "$className": "ServerStorage",
             "Rojo": {
-                "$path": "src/ServerStorage",
-                "Services": {
-                    "$path": "src/ServerStorage/Services"
-                }
-
+                "$path": "src/ServerStorage"
             }
         },
         "StarterPlayer": {

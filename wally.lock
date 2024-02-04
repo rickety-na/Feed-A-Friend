@@ -5,7 +5,7 @@ registry = "test"
 [[package]]
 name = "edwar/eatfood"
 version = "0.1.0"
-dependencies = [["Knit", "sleitnick/knit@1.6.0"]]
+dependencies = [["knit", "sleitnick/knit@1.6.0"]]
 
 [[package]]
 name = "evaera/promise"
